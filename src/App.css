@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* HTML PAGE */
+.app {
   min-height: 100vh;
+  background-color: rgb(208, 250, 239);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* HEADER */
+#blogHeader {
+  font-size: 3vw;
+  color: #ff5959;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Supported browsers */
+@supports (background-clip: text) {
+  #blogHeader {
+    font-size: 3vw;
+  
+    /* Gradient colour */
+    background-image: linear-gradient(50deg, #ffcf31, #ff5959);
+    background-clip: text;
+    color: transparent;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+h2 {
+  font-size: 2vw;
+  color: darkblue;
+}
+
+
+/* NEW POST FORM ELEMENTS */
+.newpost {
+  border: 2px groove rgb(104, 220, 255);
+  height: auto;
+}
+
+.posttitle {
+  color: rgb(89, 0, 255);
+  font-size: 2vw;
+}
+
+.postmessage {
+  color: black;
+  font-size: 1.5vw;
+  width: 90%; 
+
+  /* Prevents words from falling out of div */
+  word-wrap: break-word;
+}
+
+.postauthor {
+  color: black;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+#createPostBtn {
+  width: 70%;
+  background-color: rgb(255, 231, 96);
+  color: rgb(89, 0, 255);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5vw;
+  cursor: pointer;
+  padding: 6px;
+}
+
+
+/* DIV OF POSTS */
+.posts {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+/* EACH POST */
+.post {
+  width: 60vw;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+/* FOOTER */
+#copyright {
+  font-size: 1.25vw;
 }

@@ -1,3 +1,11 @@
+# Blog Posting Template
+>This is a personal project that allows users to create simple posts and view them.
+
+## Reference
+[React tutorial](https://www.youtube.com/watch?v=dGcsHMXbSOA&t=182s)
+
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
