@@ -127,7 +127,7 @@ function App() {
       {/* FOOTER */}
       <footer id="footer">
         <hr />
-        <p id="copyright"> &copy; Website made by Monica Bacatan.</p>
+        <p id="copyright"> &copy; Website made by Monica.</p>
       </footer>
     </div>
   );
